@@ -539,8 +539,8 @@ img {
   width: 100%;
 }
 
-/*=============== WORK SECTION ===============*/
-.work__card {
+/*=============== PROJECT SECTION ===============*/
+.project__card {
   position: relative;
   background-color: var(--container-color);
   padding: 1rem 1rem 3rem;
@@ -548,7 +548,7 @@ img {
   overflow: hidden;
 }
 
-.work__link {
+.project__link {
   position: relative;
   display: inline-block;
   overflow: hidden;
@@ -557,16 +557,16 @@ img {
   z-index: 5;
 }
 
-.work__data {
+.project__data {
   z-index: 5;
 }
 
-.work__img {
+.project__img {
   border-radius: 1rem;
   transition: transform 0.4s;
 }
 
-.work__arrow {
+.project__arrow {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -582,45 +582,45 @@ img {
   transition: opacity 0.4s;
 }
 
-.work__number {
+.project__number {
   display: block;
   font: var(--font-semi-bold) var(--biggest-font-size) var(--second-font);
   color: var(--first-color);
   margin-bottom: 1rem;
 }
 
-.work__name {
+.project__name {
   font-size: var(--h2-font-size);
   color: var(--white-color);
   margin-bottom: 0.5rem;
 }
 
-.work__card:hover .work__img {
+.project__card:hover .project__img {
   transform: scale(1.1);
 }
 
-.work__card:hover .work__arrow {
+.project__card:hover .project__arrow {
   opacity: 1;
 }
 
-.work__card .blob-big {
+.project__card .blob-big {
   top: 2rem;
   right: -2rem;
   z-index: 1;
 }
 
 /* Swiper class */
-.work__swiper {
+.project__swiper {
   width: 100%;
   height: 100%;
   padding-bottom: 4rem;
 }
 
-.work .swiper-pagination-bullets {
+.project .swiper-pagination-bullets {
   bottom: 0;
 }
 
-.work .swiper-pagination-bullet {
+.project .swiper-pagination-bullet {
   background-color: var(--first-color);
   transition: opacity 0.4s;
 }
@@ -1039,7 +1039,7 @@ img {
     justify-content: center;
   }
 
-  .work__card {
+  .project__card {
     width: 350px;
   }
 
@@ -1138,21 +1138,21 @@ img {
     width: initial;
   }
 
-  .work__container {
+  .project__container {
     max-width: 1380px;
   }
-  .work__card {
+  .project__card {
     width: 440px;
     border-radius: 3rem;
     padding: 1.5rem 1.5rem 4rem;
   }
-  .work__img {
+  .project__img {
     border-radius: 2rem;
   }
-  .work__number {
+  .project__number {
     font-size: var(--bigger-font-size);
   }
-  .work .blob-big {
+  .project .blob-big {
     right: -6rem;
   }
 

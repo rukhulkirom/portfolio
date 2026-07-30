@@ -61,8 +61,8 @@ const scrollHeader = () => {
 };
 window.addEventListener("scroll", scrollHeader);
 
-/*=============== SWIPER WORK ===============*/
-const swiperWork = new Swiper(".work__swiper", {
+/*=============== SWIPER PROJECT ===============*/
+const swiperProject = new Swiper(".project__swiper", {
   loop: true,
   spaceBetween: 24,
   slidesPerView: "auto",
@@ -227,7 +227,7 @@ sr.reveal(`.about__title`);
 sr.reveal(`.about__description`, { delay: 600 });
 sr.reveal(`.about__button`, { delay: 900 });
 
-sr.reveal(`.work__swiper`);
+sr.reveal(`.project__swiper`);
 
 sr.reveal(`.services__card:nth-child(odd)`, {
   interval: 200,
