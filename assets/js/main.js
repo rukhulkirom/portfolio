@@ -44,7 +44,7 @@ letters.forEach((char, i) => {
 
 /*=============== HOME TYPED JS ===============*/
 const typedHome = new Typed("#home-typed", {
-  strings: ["Business Analyst", "BI Analyst", "Reporting Analyst"], // Insert professions
+  strings: ["Insight Generator", "Dashboard Builder", "Data Storyteller"],
   typeSpeed: 60,
   backSpeed: 30,
   backDelay: 2000,
@@ -79,24 +79,24 @@ const swiperProject = new Swiper(".project__swiper", {
   },
 });
 
-/*=============== SERVICES ACCORDION ===============*/
-const servicesCards = document.querySelectorAll(".services__card"),
-  servicesButtons = document.querySelectorAll(".services__button");
+/*=============== EXPERTISE ACCORDION ===============*/
+const expertiseCards = document.querySelectorAll(".expertise__card"),
+  expertiseButtons = document.querySelectorAll(".expertise__button");
 
 // It iterates over each button fo
-servicesButtons.forEach((button) => {
+expertiseButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    const currentCard = button.closest(".services__card"), // Get the class of the clicked button (.services__card) and ⬇
-      isOpen = currentCard.classList.contains("services-open"); // Check already has the services-open class (Returns true or false)
+    const currentCard = button.closest(".expertise__card"), // Get the class of the clicked button (.expertise__card) and ⬇
+      isOpen = currentCard.classList.contains("expertise-open"); // Check already has the expertise-open class (Returns true or false)
 
-    // Close all other services data
-    servicesCards.forEach((card) => {
-      card.classList.replace("services-open", "services-close");
+    // Close all other expertise data
+    expertiseCards.forEach((card) => {
+      card.classList.replace("expertise-open", "expertise-close");
     });
 
     // If the clicked card was closed, it opens it
     if (!isOpen) {
-      currentCard.classList.replace("services-close", "services-open");
+      currentCard.classList.replace("expertise-close", "expertise-open");
     }
   });
 });
@@ -217,6 +217,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home__subtitle`);
 sr.reveal(`.home__title`, { delay: 600 });
 sr.reveal(`.home__description`, { delay: 900 });
+sr.reveal(`.home__buttons`, { delay: 1050 });
 sr.reveal(`.home__box-1`, { delay: 1200, rotate: { z: -20 } });
 sr.reveal(`.home__box-2`, { delay: 1300, rotate: { z: -30 } });
 sr.reveal(`.home__box-3`, { delay: 1400, rotate: { z: -40 } });
@@ -229,12 +230,14 @@ sr.reveal(`.about__button`, { delay: 900 });
 
 sr.reveal(`.project__swiper`);
 
-sr.reveal(`.services__card:nth-child(odd)`, {
+sr.reveal(`.expertise__intro`);
+
+sr.reveal(`.expertise__card:nth-child(odd)`, {
   interval: 200,
   origin: "left",
   distance: "100px",
 });
-sr.reveal(`.services__card:nth-child(even)`, {
+sr.reveal(`.expertise__card:nth-child(even)`, {
   interval: 200,
   origin: "right",
   distance: "100px",
